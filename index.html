@@ -67,7 +67,7 @@
             padding: 15px;
         }
         #interests {
-            border: 4px silver ridge;
+            border: 4px rgb(233, 200, 233) ridge;
             padding: 8px;
         }
         h2, h3 {
@@ -79,17 +79,16 @@
     <body>
       <!-- All content goes here -->
       
-        
-        <div > 
+        <div id="all-contents" > 
             <!-- website title -->
             <nav>
                 <h1  class="sidebar">My website</h1>  
                 <!-- menu -->
-                <ul>
-                    <li>
+                <ul id = “nav-ul”>
+                    <li class="nav-li" >
                       <a href="index.html" > Home </a>
                     </li>
-                    <li>
+                    <li class="nav-li" >
                       <a href="portfolio.html"> Portfolio </a>
                     </li>
                 </ul>   
@@ -97,24 +96,25 @@
 
             <main >
                  <!-- Sidebar section -->
-                <div>
-                    <img  src="https://images.unsplash.com/photo-1472457897821-70d3819a0e24?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c21hbGx8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80">
+                <div class ="sidebar">
+                    <img class = "sidebar-img" src="https://images.unsplash.com/photo-1472457897821-70d3819a0e24?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c21hbGx8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80">
                 </div> 
-                 <div id="sidebar">
+                 <div>
                  <h2>I am on a space walk</h2>
                 
-                  <p> My job is living</p>  
-                 
+                  <p> My job is living</p> 
                  <!-- Interests section -->
+                 <div id = "interests">
                     <h3 >Interests</h3>
                         <ul>
                             <li>games</li>
                             <li>art</li>
                             <li>breathing</li>
                         </ul>
+                 </div>
                     </div>
                 <!-- Content section -->
-                <div>
+                <div class="content">
                 </div>
             </main>
         </div>
