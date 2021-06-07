@@ -2,19 +2,92 @@
 <html>
     <head>
        <title>michael's funny Website</title>
+       <style>
+        body {
+            background: rgb(3, 140, 252);
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            font-family: arial;
+        }
+        /* makes space from left border*/
+        .sidebar {
+        margin-right: 25px;
+        padding: 10px;
+        }
+        /* makes more space*/
+        #all-contents {
+       max-width: 800px;
+       margin: auto;
+        }
+        /* navigation menu */
+        nav {
+            background: rgb(123, 126, 124);
+            margin: 20px auto;
+            border-radius: 30px;
+            display: flex;
+            padding: 10px;
+        }
+        h1 {
+            display: flex;
+            align-items: center;
+            color: white;
+            flex: 1;
+            margin: 0;
+        }
+        #nav-ul {
+            list-style-image: none;
+        }
+        .nav-li {
+            display: inline-block;
+            padding: 0 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        #all-contents {
+        max-width: 800px;
+        margin: auto;
+        }
+        /* main container area beneath menu */
+        main {
+            background: rgb(238, 210, 210);
+            border-radius: d25px;
+            display: flex;
+        }
+        .sidebar {
+            margin-right: 25px;
+            padding: 10px;
+        }
+        .sidebar-img {
+            width: 200px;
+        }
+        .content {
+            flex: 1;
+            padding: 15px;
+        }
+        #interests {
+            border: 4px silver ridge;
+            padding: 8px;
+        }
+        h2, h3 {
+            margin: 0px;
+        }
+    </style>
     </head>
     
     <body>
       <!-- All content goes here -->
+      
         
-        <div> 
+        <div > 
             <!-- website title -->
             <nav>
-                <h1>my website</h1>  
+                <h1  class="sidebar">My website</h1>  
                 <!-- menu -->
                 <ul>
                     <li>
-                      <a href="index.html"> Home </a>
+                      <a href="index.html" > Home </a>
                     </li>
                     <li>
                       <a href="portfolio.html"> Portfolio </a>
@@ -22,15 +95,15 @@
                 </ul>   
             </nav>
 
-            <main>
+            <main >
                  <!-- Sidebar section -->
-                <div>
-                    <img src="https://images.unsplash.com/photo-1472457897821-70d3819a0e24?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c21hbGx8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80">
-                  <h2>this website is a project</h2>
-                  <p>my job is living</p>   
+                <div  >
+                    <img  src="https://images.unsplash.com/photo-1472457897821-70d3819a0e24?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c21hbGx8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80">
+                  <h2  id ="all-contents" class="sidebar">I am on a space walk</h2>
+                  <p  class="sidebar"> My job is living</p>   
                  <!-- Interests section -->
-                 <div>
-                        <h3>Interests</h3>
+                 <div  >
+                        <h3 class="sidebar">Interests</h3>
                         <ul>
                             <li>games</li>
                             <li>art</li>
