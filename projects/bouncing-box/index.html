@@ -14,7 +14,7 @@
 			display: block;
 			position: absolute;
 			top: 100px;
-			left: 0px;  /* <--- Change me! */
+			left: 600px;  /* <--- Change me! */
 		}
 		.board{
 			height: 100vh;
@@ -61,8 +61,9 @@
 			//////////////////////////////////////////////////////////////////
 			
 			// TODO 2 - Variable declarations 
-			
-
+			var positionX = positionX + 10; 
+			var points = points + 1;
+					
 			
 			/* 
 			This Function will be called 20 times/second. Each time it is called,
@@ -70,9 +71,8 @@
 			turn it around! 
 			*/
 			function update() {
-				
-
-			};
+				moveBoxTo(positionX);
+			}
 
 			/* 
 			This Function will be called each time the box is clicked. Each time it is called,
@@ -80,11 +80,11 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				
+				positionX = 0;
+			    changeBoxText(points);
 
-
-			};
+			}
 		})();
 	</script>
-</body>
+ </body>
 </html>
